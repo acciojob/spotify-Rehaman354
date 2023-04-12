@@ -266,7 +266,7 @@ public class SpotifyRepository {
 
     public String mostPopularArtist() {
         String artistName=null;
-        int max=0;
+        int max=-1;
         for(Artist ar:artists)
         {
             if(ar.getLikes()>max) {
